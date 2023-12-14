@@ -20,6 +20,7 @@ QAT步骤
 $ pip install pytorch-quantization==2.1.2 --extra-index-url https://pypi.ngc.nvidia.com
 $ pip install ppq
 $ pip install pycuda
+$ apt-get install ninja-build
 
 2. 上传数据到对应位置 
 
@@ -44,4 +45,10 @@ $ python convert_trt.py
 
 7. trt推理
 $ python trt_infer.py
+```
+
+```shell
+ppq库
+$ python ppq-convert_onnx.py
+$ python ppq-trt_infer.py
 ```
