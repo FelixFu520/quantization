@@ -14,7 +14,8 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 def run():
     PRETRAIN_MODEL = "./checkpoints/wafer-train.pth"
-    imgPath = "./data/wafer/crop/0000_Row006_Col036_00137_14.bmp"
+    # imgPath = "./data/wafer/crop/0000_Row006_Col036_00137_14.bmp"
+    imgPath = "./data/wafer/crop/0500_Row023_Col050_00953_21.bmp"
     img = cv2.imread(imgPath,0)
     img = np.expand_dims(img, axis=0)
     img = np.expand_dims(img, axis=0).astype(np.float32)
