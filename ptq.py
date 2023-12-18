@@ -130,7 +130,7 @@ def main():
             print(" Eval Acc: {:.3f}".format(test_acc1))
             print("=================================================")
             # Save the model
-            torch.save(model.state_dict(), f"ptq_model/{model_name}_{method}_4.pth.tar")
+            torch.save(model.state_dict(), f"ptq_model/{model_name}_{method}.pth.tar")
 
 
 if __name__ == "__main__":

@@ -94,7 +94,7 @@ def main():
         model = fuse_bn_recursively(model)
 
     method = ["percentile", "mse", "entropy"]
-    model_name = f"resnet18_{method[1]}_4"
+    model_name = f"resnet18_{method[1]}"
     check_path = f"./ptq_model/{model_name}.pth.tar"
     model.load_state_dict(torch.load(check_path, map_location=device))
 
