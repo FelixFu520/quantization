@@ -1,0 +1,2244 @@
+/usr/bin/python3 /root/data/fufa/quantization/qat.py
+Prepare Model ....
+Fusing layers...
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+Quantization : model.105.m.0 has ignored.
+Quantization : model.105.m.1 has ignored.
+Quantization : model.105.m.2 has ignored.
+Prepare Dataset ....
+Scanning 'dataset/coco2017/val2017.cache' images and labels... 5000 found, 0 mis
+Scanning 'dataset/coco2017/train2017.cache' images and labels... 118287 found, 0
+/usr/local/python3/lib/python3.9/site-packages/pytorch_quantization/nn/modules/tensor_quantizer.py:286: TracerWarning: Converting a tensor to a Python number might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  inputs, amax.item() / bound, 0,
+/usr/local/python3/lib/python3.9/site-packages/pytorch_quantization/nn/modules/tensor_quantizer.py:292: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  quant_dim = list(amax.shape).index(list(amax_sequeeze.shape)[0])
+/usr/local/python3/lib/python3.9/site-packages/torch/functional.py:445: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2157.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+Rules: model.6.conv match to model.11.conv
+Rules: model.8.conv match to model.11.conv
+Rules: model.14.conv match to model.13.conv
+Rules: model.18.conv match to model.17.conv
+Rules: model.19.conv match to model.24.conv
+Rules: model.21.conv match to model.24.conv
+Rules: model.27.conv match to model.26.conv
+Rules: model.66.conv match to model.26.conv
+Rules: model.31.conv match to model.30.conv
+Rules: model.32.conv match to model.37.conv
+Rules: model.34.conv match to model.37.conv
+Rules: model.40.conv match to model.39.conv
+Rules: model.54.conv match to model.39.conv
+Rules: model.44.conv match to model.43.conv
+Rules: model.45.conv match to model.50.conv
+Rules: model.47.conv match to model.50.conv
+Rules: model.57.conv match to model.56.conv
+Rules: model.58.conv match to model.63.conv
+Rules: model.59.conv match to model.63.conv
+Rules: model.60.conv match to model.63.conv
+Rules: model.61.conv match to model.63.conv
+Rules: model.69.conv match to model.68.conv
+Rules: model.70.conv match to model.75.conv
+Rules: model.71.conv match to model.75.conv
+Rules: model.72.conv match to model.75.conv
+Rules: model.73.conv match to model.75.conv
+Rules: model.78.conv match to model.77.conv
+Rules: model.102.rbr_reparam match to model.77.conv
+Rules: model.64.conv match to model.81.conv
+Rules: model.82.conv match to model.81.conv
+Rules: model.64.conv match to model.81.conv
+Rules: model.83.conv match to model.88.conv
+Rules: model.84.conv match to model.88.conv
+Rules: model.85.conv match to model.88.conv
+Rules: model.86.conv match to model.88.conv
+Rules: model.91.conv match to model.90.conv
+Rules: model.103.rbr_reparam match to model.90.conv
+Rules: model.52.conv match to model.94.conv
+Rules: model.95.conv match to model.94.conv
+Rules: model.52.conv match to model.94.conv
+Rules: model.96.conv match to model.101.conv
+Rules: model.97.conv match to model.101.conv
+Rules: model.98.conv match to model.101.conv
+Rules: model.99.conv match to model.101.conv
+Begining Calibration ....
+Begining Finetune ....
+Supervision: model.0 will compute loss with origin model during QAT training...
+Supervision: model.1 will compute loss with origin model during QAT training...
+Supervision: model.2 will compute loss with origin model during QAT training...
+Supervision: model.3 will compute loss with origin model during QAT training...
+Supervision: model.4 will compute loss with origin model during QAT training...
+Supervision: model.5 will compute loss with origin model during QAT training...
+Supervision: model.6 will compute loss with origin model during QAT training...
+Supervision: model.7 will compute loss with origin model during QAT training...
+Supervision: model.8 will compute loss with origin model during QAT training...
+Supervision: model.9 will compute loss with origin model during QAT training...
+Supervision: model.10 will compute loss with origin model during QAT training...
+Supervision: model.11 will compute loss with origin model during QAT training...
+Supervision: model.12 will compute loss with origin model during QAT training...
+Supervision: model.13 will compute loss with origin model during QAT training...
+Supervision: model.14 will compute loss with origin model during QAT training...
+Supervision: model.15 will compute loss with origin model during QAT training...
+Supervision: model.16 will compute loss with origin model during QAT training...
+Supervision: model.17 will compute loss with origin model during QAT training...
+Supervision: model.18 will compute loss with origin model during QAT training...
+Supervision: model.19 will compute loss with origin model during QAT training...
+Supervision: model.20 will compute loss with origin model during QAT training...
+Supervision: model.21 will compute loss with origin model during QAT training...
+Supervision: model.22 will compute loss with origin model during QAT training...
+Supervision: model.23 will compute loss with origin model during QAT training...
+Supervision: model.24 will compute loss with origin model during QAT training...
+Supervision: model.25 will compute loss with origin model during QAT training...
+Supervision: model.26 will compute loss with origin model during QAT training...
+Supervision: model.27 will compute loss with origin model during QAT training...
+Supervision: model.28 will compute loss with origin model during QAT training...
+Supervision: model.29 will compute loss with origin model during QAT training...
+Supervision: model.30 will compute loss with origin model during QAT training...
+Supervision: model.31 will compute loss with origin model during QAT training...
+Supervision: model.32 will compute loss with origin model during QAT training...
+Supervision: model.33 will compute loss with origin model during QAT training...
+Supervision: model.34 will compute loss with origin model during QAT training...
+Supervision: model.35 will compute loss with origin model during QAT training...
+Supervision: model.36 will compute loss with origin model during QAT training...
+Supervision: model.37 will compute loss with origin model during QAT training...
+Supervision: model.38 will compute loss with origin model during QAT training...
+Supervision: model.39 will compute loss with origin model during QAT training...
+Supervision: model.40 will compute loss with origin model during QAT training...
+Supervision: model.41 will compute loss with origin model during QAT training...
+Supervision: model.42 will compute loss with origin model during QAT training...
+Supervision: model.43 will compute loss with origin model during QAT training...
+Supervision: model.44 will compute loss with origin model during QAT training...
+Supervision: model.45 will compute loss with origin model during QAT training...
+Supervision: model.46 will compute loss with origin model during QAT training...
+Supervision: model.47 will compute loss with origin model during QAT training...
+Supervision: model.48 will compute loss with origin model during QAT training...
+Supervision: model.49 will compute loss with origin model during QAT training...
+Supervision: model.50 will compute loss with origin model during QAT training...
+Supervision: model.51 will compute loss with origin model during QAT training...
+Supervision: model.52 will compute loss with origin model during QAT training...
+Supervision: model.53 will compute loss with origin model during QAT training...
+Supervision: model.54 will compute loss with origin model during QAT training...
+Supervision: model.55 will compute loss with origin model during QAT training...
+Supervision: model.56 will compute loss with origin model during QAT training...
+Supervision: model.57 will compute loss with origin model during QAT training...
+Supervision: model.58 will compute loss with origin model during QAT training...
+Supervision: model.59 will compute loss with origin model during QAT training...
+Supervision: model.60 will compute loss with origin model during QAT training...
+Supervision: model.61 will compute loss with origin model during QAT training...
+Supervision: model.62 will compute loss with origin model during QAT training...
+Supervision: model.63 will compute loss with origin model during QAT training...
+Supervision: model.64 will compute loss with origin model during QAT training...
+Supervision: model.65 will compute loss with origin model during QAT training...
+Supervision: model.66 will compute loss with origin model during QAT training...
+Supervision: model.67 will compute loss with origin model during QAT training...
+Supervision: model.68 will compute loss with origin model during QAT training...
+Supervision: model.69 will compute loss with origin model during QAT training...
+Supervision: model.70 will compute loss with origin model during QAT training...
+Supervision: model.71 will compute loss with origin model during QAT training...
+Supervision: model.72 will compute loss with origin model during QAT training...
+Supervision: model.73 will compute loss with origin model during QAT training...
+Supervision: model.74 will compute loss with origin model during QAT training...
+Supervision: model.75 will compute loss with origin model during QAT training...
+Supervision: model.76 will compute loss with origin model during QAT training...
+Supervision: model.77 will compute loss with origin model during QAT training...
+Supervision: model.78 will compute loss with origin model during QAT training...
+Supervision: model.79 will compute loss with origin model during QAT training...
+Supervision: model.80 will compute loss with origin model during QAT training...
+Supervision: model.81 will compute loss with origin model during QAT training...
+Supervision: model.82 will compute loss with origin model during QAT training...
+Supervision: model.83 will compute loss with origin model during QAT training...
+Supervision: model.84 will compute loss with origin model during QAT training...
+Supervision: model.85 will compute loss with origin model during QAT training...
+Supervision: model.86 will compute loss with origin model during QAT training...
+Supervision: model.87 will compute loss with origin model during QAT training...
+Supervision: model.88 will compute loss with origin model during QAT training...
+Supervision: model.89 will compute loss with origin model during QAT training...
+Supervision: model.90 will compute loss with origin model during QAT training...
+Supervision: model.91 will compute loss with origin model during QAT training...
+Supervision: model.92 will compute loss with origin model during QAT training...
+Supervision: model.93 will compute loss with origin model during QAT training...
+Supervision: model.94 will compute loss with origin model during QAT training...
+Supervision: model.95 will compute loss with origin model during QAT training...
+Supervision: model.96 will compute loss with origin model during QAT training...
+Supervision: model.97 will compute loss with origin model during QAT training...
+Supervision: model.98 will compute loss with origin model during QAT training...
+Supervision: model.99 will compute loss with origin model during QAT training...
+Supervision: model.100 will compute loss with origin model during QAT training...
+Supervision: model.101 will compute loss with origin model during QAT training...
+Supervision: model.102 will compute loss with origin model during QAT training...
+Supervision: model.103 will compute loss with origin model during QAT training...
+Supervision: model.104 will compute loss with origin model during QAT training...
+Supervision: model.105 not compute loss during QAT training...
+QAT Finetuning 1 / 10, Loss: 5.04522, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.07970, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.43783, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 6.21807, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.83854, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.02307, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.43513, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.15082, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.94950, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.00023, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.21646, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.46855, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 6.21058, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.61551, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.16932, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.60369, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.94464, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.68979, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.45245, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.80133, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 5.74978, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.63310, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.32769, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.75120, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.63878, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.69123, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.42837, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.39832, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.22049, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.99408, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.41819, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.29136, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.14565, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.37225, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.55357, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.02617, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.83024, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.97788, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.10674, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.15792, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.27926, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.42907, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 5.18664, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.67324, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.47490, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.90410, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 5.71140, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.41466, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.14223, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.92627, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.53043, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.04942, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.84865, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.61984, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.24855, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.06719, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.73039, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 6.24596, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.13009, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.27610, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.79987, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.93212, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.26912, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.45168, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.58545, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.38254, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.97334, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.96662, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 4.03223, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.74969, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.95344, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.06104, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.97148, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.29069, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.93164, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.42811, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.78455, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.35437, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.49551, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.70162, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.39500, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.91786, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.26709, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.38669, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.30505, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.39601, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.07149, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.21782, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.18509, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.41802, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.18940, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.73677, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.00794, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.90545, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.95718, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.04248, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.41886, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.93823, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.00025, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.75899, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.10352, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.28120, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.62105, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.60454, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.21555, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.57060, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.98301, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.04021, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.83048, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.98726, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.65125, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.01845, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.66100, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.09010, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.95289, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.38161, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.18603, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.13267, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.79008, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.03535, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.33933, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.32137, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.47703, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.68302, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.37524, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.17812, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.40149, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.68805, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.99947, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.82612, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.12089, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.90620, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.85010, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.62202, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.33865, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.37750, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.46340, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.33430, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.24113, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.14883, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.97663, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.73272, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.87990, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.88638, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.41653, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.89511, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.17590, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.40824, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.16040, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.25615, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.63110, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.37580, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.59162, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.12907, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.01871, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.13435, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.39227, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.68525, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.76810, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.18176, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.16804, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.64114, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.85333, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.65459, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.25065, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.62147, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.15138, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.16463, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.11079, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.00966, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.21935, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.47513, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.07304, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.78399, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.10193, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.92296, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.93638, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.32793, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.79800, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.23471, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.13185, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.68037, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.44493, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.02673, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.10112, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.76143, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.29860, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.79934, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.67061, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.07609, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.84278, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 5.56109, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.65244, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.90406, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 2.05795, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.86943, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 3.02790, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.59277, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.62311, LR: 1e-06
+QAT Finetuning 1 / 10, Loss: 1.78852, LR: 1e-06
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.726       0.625       0.681       0.486
+Save qat model to qat_yolov7.onnx @ 0.48551
+/root/data/fufa/quantization/yolov7/models/yolo.py:152: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if self.grid[i].shape[2:4] != x[i].shape[2:4]:
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+QAT Finetuning 2 / 10, Loss: 2.77677, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.11525, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.28599, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.57661, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.34827, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.16492, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.53087, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.91021, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.71837, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.11237, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 5.30489, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.09746, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.10975, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.00033, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.85978, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.80407, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.24305, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.35334, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.82981, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.03842, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.79301, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.70747, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.31650, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.97789, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.98908, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.56293, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.62191, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.22424, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.56870, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.70801, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.70038, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.72485, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.62765, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.30496, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.61292, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.90565, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.48691, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.41915, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.30728, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.16991, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.29598, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.27761, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.55948, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.93089, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.10081, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.21965, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.50780, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.93385, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.57970, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.67027, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.15093, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.91034, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.15423, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.66672, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.44464, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.61193, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.84712, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.90657, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.06474, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.45710, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.28116, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.47846, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.31774, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.09627, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.73802, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.98165, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.25696, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.59691, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.45665, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.55593, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.81619, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.76328, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.67103, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.00397, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.13348, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.50492, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.77011, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.95338, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.28997, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.55796, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.55485, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.49011, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.93988, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.12742, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.52094, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.36997, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.99681, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.11846, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.48145, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.26964, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.34824, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.42292, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.38719, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.37841, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.34085, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.78619, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.85033, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.68651, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.33069, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.98454, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.76467, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.07903, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.82833, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.26331, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.56725, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.62561, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.49519, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.87760, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.68432, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.12451, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.11478, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.90021, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.89089, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.81086, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.20144, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.04445, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.93903, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.17615, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.55172, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.33325, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.41327, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.42784, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.99700, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.71872, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.52765, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.22817, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.04515, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.31981, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.19385, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.37168, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.38259, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.11639, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.85320, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.28042, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.47266, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.17706, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.94299, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.92046, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.14693, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.14507, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.73072, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.28947, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.23316, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.40385, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.98177, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.40139, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.76344, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.19104, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.13346, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.66898, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.04797, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.44101, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.58814, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.02279, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.89729, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.66276, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.50045, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.18701, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.96209, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.44372, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.86961, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.80415, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.66196, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.96229, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.29349, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.95120, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.01382, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.12608, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.92091, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.16232, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.07188, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.80756, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.09968, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.20014, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.52419, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.82906, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.30213, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.39028, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.66588, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.04853, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.04991, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.63810, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.76732, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.13570, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.42852, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 4.57178, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.12096, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.74938, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.76650, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.37571, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.14804, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.08544, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.80303, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 1.86059, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.31591, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.36728, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.48887, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.01215, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 3.80470, LR: 1e-06
+QAT Finetuning 2 / 10, Loss: 2.91682, LR: 1e-06
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.735       0.618        0.68       0.485
+QAT Finetuning 3 / 10, Loss: 1.72432, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.76279, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.56194, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.87286, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.95048, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.27881, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.13791, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.13081, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.42188, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.71020, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.18722, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.61132, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 5.29963, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.52397, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.13340, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.55519, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.34012, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.21293, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.35025, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.27423, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.07409, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.30766, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.49260, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.17630, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.95870, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.55249, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.17122, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.98670, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.04216, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.09831, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.28522, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.27374, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.35636, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.65392, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.61200, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.11959, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.41097, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.15176, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.24312, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.87849, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.11393, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.74399, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.20901, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.98625, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.68209, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.31966, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.98239, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.97364, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.96164, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.96026, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.45137, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.98582, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.60350, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.29956, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.83807, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.16935, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.83426, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.20519, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.84013, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.35967, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.62630, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.34028, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.88487, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.78523, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.76219, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.74786, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.85565, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.83475, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.58087, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.88998, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.92632, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.66971, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.67242, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.69370, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.83004, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.87614, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.20154, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.19464, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.55128, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.95503, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.33420, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.10056, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.54483, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.14487, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.43310, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.20232, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.74678, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.02774, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.61551, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.05211, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.66565, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.58782, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.34190, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.62172, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.64188, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.36489, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.36602, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.44229, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.09761, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.09242, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.02626, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.75552, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.09903, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.20331, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.09399, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.09105, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.82887, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.05818, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.26739, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.93534, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.39521, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.16007, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.15572, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.39200, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.66512, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.09451, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.80251, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.97042, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.43430, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.33673, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.95497, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.95083, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.06352, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.32440, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.86404, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.33782, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.15654, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.36326, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.62312, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.18619, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.71554, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.80916, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.70222, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.15256, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.97336, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.50898, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.86174, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.72813, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.12577, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.80849, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.60212, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.23529, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.52508, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.65616, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.30770, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.90736, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.88882, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.01278, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.30464, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.57728, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.36344, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.27575, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.67366, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.76800, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.89115, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.78782, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.19651, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.25390, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.94989, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.16791, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.86212, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.15962, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.24920, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.83690, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.78063, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.15521, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.18168, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.04297, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.99471, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.00452, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.54216, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.00956, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.04383, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 5.45303, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.50541, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.89353, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 5.09198, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.62250, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.90281, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.27393, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.45282, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.57420, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.81076, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.01737, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.22746, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.20698, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.31996, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.52723, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.97317, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.70771, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.16557, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 4.28811, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.24443, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.69307, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.64909, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.07416, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.22173, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 2.07057, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 3.12128, LR: 1e-06
+QAT Finetuning 3 / 10, Loss: 1.78665, LR: 1e-06
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781        0.72       0.629       0.681       0.486
+Save qat model to qat_yolov7.onnx @ 0.48589
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+QAT Finetuning 4 / 10, Loss: 2.04024, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.99264, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.23489, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.35576, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.26025, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.69856, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.66401, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.67776, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.19162, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.35904, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.14537, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.56119, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.90440, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.80776, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.42254, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.20117, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.88093, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.34199, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.60342, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.78801, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.25580, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.22361, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.64655, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.48033, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.45941, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.58078, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.12867, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.61294, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.09374, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.40484, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.84679, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.67899, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.24494, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.68125, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.51937, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.61996, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.59557, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.54564, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.67154, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.97223, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.49904, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.91943, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.58650, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.91222, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.60611, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.35272, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.97765, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.16767, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.59536, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.25450, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.65770, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.56649, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.86199, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.90434, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.56221, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.90342, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.59827, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 4.03481, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.78079, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.80254, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.20073, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.60182, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.75609, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.60061, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.81848, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.39154, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.66052, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.34420, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.02331, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.70713, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.05479, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.50433, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.65026, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.05484, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.43384, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.83693, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.73968, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.90753, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.81963, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.77201, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.05480, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.05975, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.77153, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 4.42442, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.36920, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.46996, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.31001, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.45748, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.19111, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.03299, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.84723, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.89560, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.03014, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.18717, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.29627, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.16221, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.55092, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.26452, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.05643, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.99376, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.90874, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.10162, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.87753, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.19264, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.10836, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.01888, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.03834, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.27708, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.69728, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 4.36379, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.44996, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.28373, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.28862, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.79269, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.85322, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.87771, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.36854, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.89454, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.15758, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.91868, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.06415, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 3.10585, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.27993, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.78358, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.55441, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.69435, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.14947, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.59257, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.55263, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.82665, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.84201, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.41436, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.49624, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.18439, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.93211, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.06646, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.81868, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.09227, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.84548, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.30593, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.81866, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.51188, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.62225, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.78635, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.80045, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.85713, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.09946, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.88540, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.72673, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.06878, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.80891, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.28370, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.79854, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.12935, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.55180, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.80014, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.83316, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.11482, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.19122, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.92848, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.14751, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.33317, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.13542, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.96600, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.58988, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.82486, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.82993, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.87407, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.90611, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.31398, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.11207, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.90230, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.73816, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.45481, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.69883, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.87205, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.81075, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.24206, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.77691, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.17577, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.84621, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.92392, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.82479, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.30883, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.08489, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.28674, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.76172, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.16639, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.14903, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.24858, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.88197, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.38531, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.30813, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 4.23374, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.99260, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.78386, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.85074, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.98061, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 1.55394, LR: 1e-05
+QAT Finetuning 4 / 10, Loss: 2.05548, LR: 1e-05
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.721       0.627        0.68       0.486
+QAT Finetuning 5 / 10, Loss: 2.79049, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.29141, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.15598, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.11066, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.66065, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.96347, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.83110, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.08803, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.15414, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.33441, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.56958, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.45639, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.13977, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.25643, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.72055, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.64976, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.04547, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.63945, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.74236, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.08059, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.79951, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.24657, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.43419, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.33047, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.59692, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.62688, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.83127, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.99600, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.37653, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.92982, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.37135, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.53754, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.37554, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.25253, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.81144, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.92849, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.23390, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.67141, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.36422, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.21163, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.60922, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.46739, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.03348, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.61970, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.04520, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.39577, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.33681, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.68975, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.90748, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.45161, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.68600, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.39509, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 4.94790, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.48221, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 4.40263, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.25291, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 4.20700, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.81116, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.11912, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.09103, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.34692, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.48371, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.90847, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.32886, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.55795, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.20316, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.81360, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 4.83310, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.24636, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.06564, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.99218, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.50530, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.85192, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.79045, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.96259, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 4.04325, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.03438, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.48540, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.27197, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.02270, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.75152, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.32061, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.56253, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.67252, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.67314, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.98253, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.50647, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.02198, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.39065, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.24705, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.69439, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.66281, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.29197, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.85294, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.41947, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.62969, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.92991, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.04325, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.38060, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.03510, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.37775, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.58528, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.96021, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.76524, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.12028, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.80986, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.68260, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.30074, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.18454, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.25108, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.33892, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.08303, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.50248, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.66004, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.10274, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.87052, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.02376, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.51826, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.41049, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.59877, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.68111, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.01734, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.88827, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.80595, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.30256, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.56716, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.80115, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.82017, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.69202, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.58221, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.50173, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.84548, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.10350, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.52740, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.22923, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.32851, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.00339, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.62533, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.39382, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.09918, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.34536, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.53605, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 4.38363, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.89482, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.62659, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.75840, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.01491, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.58195, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.02504, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.13199, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.80630, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.44250, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.73494, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.40002, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.51379, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.75248, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.79590, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.85958, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.61819, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.58735, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.03522, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.81967, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.99202, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.28928, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.21869, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.58091, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.46639, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.19875, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.09538, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.74155, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.94074, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.72429, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.21978, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.82060, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.35960, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.41742, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.54268, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.62511, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.07239, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.75832, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.98655, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.13641, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.01815, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 3.29482, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.21863, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.58709, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.47803, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.07963, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.97950, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.97150, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.74048, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.80828, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.52908, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.66342, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.92519, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.25303, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.42217, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.67108, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 2.19761, LR: 1e-05
+QAT Finetuning 5 / 10, Loss: 1.98013, LR: 1e-05
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.717       0.632        0.68       0.486
+Save qat model to qat_yolov7.onnx @ 0.48598
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+QAT Finetuning 6 / 10, Loss: 1.36292, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.99431, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.37386, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.53885, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.39878, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.27981, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.87861, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.21005, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.58843, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.21147, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.19432, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.36589, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.68769, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.96967, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.74745, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.49221, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.81154, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 3.08070, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.83850, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.60456, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.30888, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.13729, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.20954, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.81662, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.64281, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.29013, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.84213, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.68247, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.49127, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.66862, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.61228, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.06314, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.87933, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.65323, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.91113, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.50666, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.04882, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.19672, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.63888, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.87651, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.47550, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.07516, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.96305, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.45353, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.90691, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.88513, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.71747, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.38754, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.75611, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.75299, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.63701, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.86140, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.37145, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.83651, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.50144, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.35836, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.20340, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.79483, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.67082, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 3.74470, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.48484, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.69596, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.76783, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.97720, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.17296, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.17644, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.96493, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.08489, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.18786, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.71277, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.15035, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.67400, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.92370, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.67142, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.52002, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.97253, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.38590, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.22377, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.85910, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.58777, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.38351, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.61397, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.35678, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.97455, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.65570, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.99386, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.54312, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.34192, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.73313, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.31081, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.65062, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.15793, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.76272, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 3.10492, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.84262, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.66551, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.32384, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.09415, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.80776, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.74125, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.02255, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.54024, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.96768, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.94825, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.21057, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.99879, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.76840, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.81687, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.08395, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.73796, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.62883, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.78975, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.06850, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.42570, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.69457, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.94618, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.47470, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 3.17802, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.61186, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.92122, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.57296, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.60922, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.50283, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.41247, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.66767, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.37123, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.10614, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.68917, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 3.14039, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.16556, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.21866, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.87676, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.63364, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.02764, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.99467, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.05227, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.87437, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.38260, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.73164, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.63104, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.59533, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.84653, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.02186, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.64636, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.87913, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.89804, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.13871, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.38739, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.54440, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.33785, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.55663, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.84084, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.49459, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.54217, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.79880, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.36571, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.92918, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.96587, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.79856, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.29658, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.26077, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.41425, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.70750, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.82139, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.06960, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.99928, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.06445, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.96944, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.69440, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.74198, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.40502, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.65784, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.16348, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.21605, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.34633, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.38820, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.10904, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.74399, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.38909, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.39487, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.34527, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.59703, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.56242, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.39657, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.79972, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.45110, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.99346, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.58596, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.71748, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.19400, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.43574, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.94292, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.92082, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.51197, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.94502, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.85045, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.95057, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 2.04128, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.72441, LR: 1e-05
+QAT Finetuning 6 / 10, Loss: 1.41111, LR: 1e-05
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.721        0.63       0.681       0.486
+Save qat model to qat_yolov7.onnx @ 0.48637
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+QAT Finetuning 7 / 10, Loss: 2.37275, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.84465, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.82273, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.90739, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.77888, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.58154, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.70833, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.40606, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.28031, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.22688, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.42712, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.02997, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.45124, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.92042, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 3.46385, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.29394, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.64340, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.52135, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.86012, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.77061, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.45055, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.00562, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.70964, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.52410, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.28765, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.53360, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.68850, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.56949, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.58610, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.72647, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.33912, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.38254, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.59141, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 3.47270, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.71387, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.54078, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 3.57057, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.68846, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.97892, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.07065, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.70241, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.16016, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.46644, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.71175, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.94969, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.19166, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.32925, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.45373, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.61683, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.83987, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.56774, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.46664, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.87527, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.06419, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.59412, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.47727, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.66088, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.03753, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.60029, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.82928, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.42982, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.95100, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.71107, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.02731, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.34857, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.86425, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.04802, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.07046, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.68629, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.58118, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.53375, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.42384, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.57051, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.07309, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.82322, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.91248, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.07219, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.07111, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.61044, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.67961, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.04558, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.25806, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.40541, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.12798, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.68780, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.90547, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 3.61194, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.93933, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.66684, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.17204, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.54513, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.86819, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.77749, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.77818, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.32394, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.21417, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.15441, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.82102, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.22498, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.10038, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.32734, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.36036, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.44921, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.65999, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.30859, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.08750, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.72358, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.53601, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.11714, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.01755, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.54669, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.78304, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.93686, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.46443, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.73882, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.01285, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.69602, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.02514, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.09193, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.23060, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.31257, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.80234, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.02019, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 3.45672, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.53572, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.89100, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.15776, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.60932, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.34816, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.29291, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.34998, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.83994, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.52316, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.75366, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.36835, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.80082, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.94736, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.16961, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.71567, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.03021, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.47420, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.43874, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.81318, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.65289, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.93433, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.83384, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.95063, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.08939, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.83794, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.95719, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.60464, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.45536, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.82120, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.59045, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.27383, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.28317, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.60973, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.83997, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.83231, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.54553, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.98522, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.03365, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.56869, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.68599, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.83737, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.68603, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.30606, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.44196, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.34005, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.89229, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.62867, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.42208, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.00905, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.49913, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.40666, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.56545, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.69600, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.91593, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.72442, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 4.22381, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.70313, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.44230, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.76156, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.70493, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.93511, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.70765, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.36946, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.56143, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.62514, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.25288, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.70821, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.85424, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.78232, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.93978, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.37231, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.41012, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.44414, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.79445, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 1.93971, LR: 1e-05
+QAT Finetuning 7 / 10, Loss: 2.06842, LR: 1e-05
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.712       0.635       0.681       0.487
+Save qat model to qat_yolov7.onnx @ 0.48653
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+QAT Finetuning 8 / 10, Loss: 1.84446, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.57571, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.53617, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.95233, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.74584, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.12112, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.28808, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.60252, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.77487, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.59512, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.01011, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.59483, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.60468, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.10642, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.75485, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.55595, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.57961, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.96225, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.28980, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.36407, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.91527, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.72456, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.07919, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.28477, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.93267, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.30109, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.14159, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.67493, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.79367, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.01832, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.87682, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.63683, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.81513, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.03118, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.50222, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.33669, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.76326, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.47868, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.71811, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.70227, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.45048, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.65711, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.03202, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.13023, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.36309, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.75853, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.84759, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.09476, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.85708, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.50014, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.09383, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.44810, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.57705, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.07005, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.46183, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.59277, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.43694, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.98387, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.45891, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.55698, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.66433, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.45451, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.05787, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.57881, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.92242, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.58056, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.35072, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.00836, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.59277, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.28000, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.06204, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.18402, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.75120, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.18488, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.63955, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.83454, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.59900, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.96657, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.87247, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.33712, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.85216, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.50225, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.38770, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.74811, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.61181, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.68142, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.51413, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.75905, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.97227, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.32307, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.27563, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.13519, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.41843, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.97562, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.50003, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.98008, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.66368, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.89367, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.89164, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.63535, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.36553, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.49593, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.66121, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.81524, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.96422, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.15006, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.85687, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.55895, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.56414, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.73225, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.70885, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.34233, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.87704, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.38697, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.71208, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.75713, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.80165, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.02910, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.39259, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.28877, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.69341, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.02815, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.28034, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.68180, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.74447, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.88036, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.95618, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.86011, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.79911, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.29713, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.36098, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.69337, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.60227, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.01248, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.56788, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.80378, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.76937, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.72157, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.78360, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.15064, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.97909, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.94931, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.02921, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.91457, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.09380, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.77868, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.04356, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.01865, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.88591, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.37779, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.45498, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.39975, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.21547, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.54974, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.76691, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.90596, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.85087, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.76635, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.70956, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.58810, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.70260, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.14076, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.54756, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.85982, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.97436, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.11572, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.17953, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.52906, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.14457, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.84924, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.27905, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.82982, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.67227, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.10199, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.29021, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.55814, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.18919, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.49912, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.62762, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.89526, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.24808, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.41698, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.68653, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.73856, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.04836, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.67057, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.70320, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.13816, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.90111, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.64522, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.72578, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.30254, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.01804, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.99768, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 3.34548, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.62703, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 2.09338, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.69971, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.89375, LR: 1e-05
+QAT Finetuning 8 / 10, Loss: 1.67435, LR: 1e-05
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.718       0.633       0.681       0.487
+Save qat model to qat_yolov7.onnx @ 0.48693
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+WARNING: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function.
+QAT Finetuning 9 / 10, Loss: 1.63847, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.54847, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.92516, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.67827, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.39531, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.36084, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.94963, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.53225, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.62680, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.69938, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.53187, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.21402, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.49874, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.60318, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.60733, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.54902, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.60040, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.90793, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.42993, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.74538, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.22481, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.16026, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.95352, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.87751, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.22528, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.59000, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.01169, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 4.86860, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.82821, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.17668, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.94689, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.33311, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.69229, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.98043, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.79511, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.60491, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.37725, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.83690, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.90371, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.56873, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.03438, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.65888, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.84982, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.91690, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.49674, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.94555, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.49634, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.74993, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.98767, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.72522, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.10092, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.62377, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.27741, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.16039, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.07761, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.60865, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.61290, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.83228, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.82038, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.59136, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.07272, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.70495, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.80844, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.31089, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.47589, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.88433, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.99970, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.99975, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.75657, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.25854, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.10139, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 3.11777, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.99679, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.01807, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.66803, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.48013, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.48514, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.68498, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.21809, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.55301, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.76593, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.90682, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.41246, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.71269, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.84554, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.85724, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.98268, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.53218, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.41835, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.75866, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.28756, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.87629, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.83492, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.40564, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.43916, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.17739, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.59200, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.11572, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.44447, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.86762, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.57676, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.68620, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 4.43853, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.62738, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.58380, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.99994, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 3.87131, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.60592, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.86147, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.58976, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.00934, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.77176, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.70414, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.81201, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.71301, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.45627, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.26954, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.51200, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.87783, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.34537, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.48423, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.79582, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.74359, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.11622, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.90875, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.45256, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.71928, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.77354, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.83477, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.13579, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.51306, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.24122, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.33137, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.60996, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.79635, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.18983, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.55791, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.84105, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.13967, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.48957, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.23825, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.76819, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.89772, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.45186, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.52022, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.90029, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.81713, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.61896, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.57597, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.99805, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.04645, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.68278, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.18026, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.52528, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.71499, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.00560, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.43022, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.27309, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.64713, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.13077, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 3.04078, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.20705, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.17372, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.64533, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.80822, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.06881, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.66129, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.58108, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.40849, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.80790, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.96753, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.09209, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.44402, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.45605, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.81330, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.57196, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.98970, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.46165, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.27482, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.94325, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.69075, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.90850, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.89131, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.93242, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.74019, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.63704, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.52949, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.69305, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 4.04097, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.52046, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.69145, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.99801, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.16681, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.72568, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.37053, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.78739, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 2.47621, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.71383, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.70778, LR: 1e-06
+QAT Finetuning 9 / 10, Loss: 1.39330, LR: 1e-06
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.714       0.634       0.681       0.486
+QAT Finetuning 10 / 10, Loss: 1.52441, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.69047, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.27863, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.90809, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.27394, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.09083, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.47325, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.85519, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.47029, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.65082, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.34032, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.76331, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.69554, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.01022, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.61946, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.66894, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.19238, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.48171, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.77288, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.70745, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.63791, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.52190, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.00503, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.75414, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.81867, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.89462, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.74462, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.49593, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.91490, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.18460, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.58667, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.61714, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.65324, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.68170, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.65415, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.28280, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.86603, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.31717, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.86347, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.48558, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.43234, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.41802, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.76298, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.45740, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.52355, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.61504, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.18087, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.29641, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.99377, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.41007, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.09534, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.52058, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.40264, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.39033, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.42669, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.24498, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.11711, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.86015, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.52992, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 3.82979, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 4.94619, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.62926, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.05947, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.98751, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.99862, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.48436, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.08559, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.19910, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.85928, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.64061, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.82825, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 3.56728, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.61509, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.71887, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.83739, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.57234, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.95912, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.43177, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.75285, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.53062, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.68654, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.52982, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.59271, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.98687, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.00817, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.98829, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.38224, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.94891, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.51483, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.01031, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.52342, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.58627, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.55086, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.26902, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.88485, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.10046, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.69522, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.60273, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.87080, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.75636, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.73822, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.67112, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.29922, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.58873, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 4.89811, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.90185, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.91794, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.87756, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.14440, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.04260, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.35888, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.19591, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.47918, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.33032, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 3.29675, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.74700, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.87014, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.33885, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.28769, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.26491, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 3.54659, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.65403, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.34230, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.71141, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.43566, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.18527, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.96849, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.80012, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.88998, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.05414, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.69709, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.49920, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.09850, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.58816, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.57369, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.85326, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.60864, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.44212, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.77596, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.52953, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.10128, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.42155, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.08101, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.72770, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.69992, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.90899, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.69522, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.85212, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.07458, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.10405, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.56796, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.53752, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.84004, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.46187, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.91532, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.65175, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.04772, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.34448, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.70199, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.95366, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.49449, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.86715, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.79756, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.08909, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.76850, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.83688, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.56520, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.02562, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.31385, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.48020, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.78533, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.78815, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.18986, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.62877, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.55299, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 3.83078, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.64757, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.25176, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.31162, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.14000, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.61633, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 3.71213, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.53856, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.03059, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.17820, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.66261, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.83488, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.94558, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.03939, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.55267, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.84174, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.68796, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.52894, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.71777, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.32321, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.60960, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.21900, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.33726, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 1.81490, LR: 1e-06
+QAT Finetuning 10 / 10, Loss: 2.54278, LR: 1e-06
+               Class      Images      Labels           P           R      mAP@.5
+                 all        5000       36781       0.718       0.632       0.681       0.486
+QAT Finished ....
+
+Process finished with exit code 0

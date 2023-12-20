@@ -1,0 +1,316 @@
+root@c71720f39931:~/data/fufa/quantization# python ptq.py
+Sensitive Analysis....
+Prepare Model ....
+Fusing layers...
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+Prepare Dataset ....
+Scanning 'dataset/coco2017/train2017.cache' images and labels... 118287 found, 0 missing, 1021 empty, 4 corrupted: 100%|█| 118287/118287 [00:00<?, ?it/s
+Scanning 'dataset/coco2017/val2017.cache' images and labels... 5000 found, 0 missing, 48 empty, 0 corrupted: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+Begining Calibration ....
+/usr/local/python3/lib/python3.9/site-packages/torch/functional.py:445: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2157.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Begining Sensitive Analysis ....
+Sensitive analysis by each layer....
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.81it/s]
+                 all        5000       36781       0.706       0.643       0.686        0.49
+layer 0 ap: 0.4904523075761576
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.92it/s]
+                 all        5000       36781       0.724        0.63       0.686        0.49
+layer 1 ap: 0.490356384812236
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.73it/s]
+                 all        5000       36781       0.709       0.642       0.686       0.491
+layer 2 ap: 0.49054278505314974
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:09<00:00,  9.68it/s]
+                 all        5000       36781       0.714       0.637       0.685        0.49
+layer 3 ap: 0.4901566408091004
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:09<00:00,  9.64it/s]
+                 all        5000       36781       0.708       0.642       0.685        0.49
+layer 4 ap: 0.4903803788239456
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:09<00:00,  9.66it/s]
+                 all        5000       36781       0.713       0.639       0.686        0.49
+layer 5 ap: 0.4903142174041316
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.69it/s]
+                 all        5000       36781       0.725       0.628       0.686        0.49
+layer 6 ap: 0.4903508220487135
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:09<00:00,  9.68it/s]
+                 all        5000       36781       0.721       0.631       0.686        0.49
+layer 7 ap: 0.4904655089534712
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:10<00:00,  9.61it/s]
+                 all        5000       36781       0.714       0.639       0.686        0.49
+layer 8 ap: 0.49019810159262933
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.70it/s]
+                 all        5000       36781       0.712        0.64       0.686        0.49
+layer 9 ap: 0.4903778909840696
+ignore model.10 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.72it/s]
+                 all        5000       36781       0.716       0.635       0.686       0.491
+layer 11 ap: 0.49079444371758374
+ignore model.12 because it is <class 'models.common.MP'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.86it/s]
+                 all        5000       36781       0.716       0.636       0.685        0.49
+layer 13 ap: 0.4902273099194341
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:05<00:00,  9.96it/s]
+                 all        5000       36781       0.712       0.639       0.686        0.49
+layer 14 ap: 0.49028867357479655
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.79it/s]
+                 all        5000       36781       0.726       0.628       0.686        0.49
+layer 15 ap: 0.4899522600379324
+ignore model.16 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.76it/s]
+                 all        5000       36781       0.713       0.638       0.685        0.49
+layer 17 ap: 0.4899335292738577
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.81it/s]
+                 all        5000       36781       0.714       0.638       0.686        0.49
+layer 18 ap: 0.4902103515294721
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.80it/s]
+                 all        5000       36781       0.707       0.643       0.686        0.49
+layer 19 ap: 0.4903133422361847
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.79it/s]
+                 all        5000       36781       0.714       0.637       0.686        0.49
+layer 20 ap: 0.4901961078233598
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.81it/s]
+                 all        5000       36781       0.724       0.632       0.686       0.491
+layer 21 ap: 0.4906023379723036
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.84it/s]
+                 all        5000       36781       0.717       0.636       0.686        0.49
+layer 22 ap: 0.49040748167482934
+ignore model.23 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.91it/s]
+                 all        5000       36781       0.719       0.633       0.686        0.49
+layer 24 ap: 0.4904585445957287
+ignore model.25 because it is <class 'models.common.MP'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.86it/s]
+                 all        5000       36781       0.716       0.635       0.686        0.49
+layer 26 ap: 0.49031072840064366
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.88it/s]
+                 all        5000       36781       0.717       0.636       0.685        0.49
+layer 27 ap: 0.49036028029624834
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.75it/s]
+                 all        5000       36781       0.715       0.636       0.686       0.491
+layer 28 ap: 0.4906964883063408
+ignore model.29 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.81it/s]
+                 all        5000       36781       0.717       0.637       0.686        0.49
+layer 30 ap: 0.4901629886567015
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.89it/s]
+                 all        5000       36781       0.705       0.643       0.685        0.49
+layer 31 ap: 0.4903934789175296
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.87it/s]
+                 all        5000       36781       0.729       0.626       0.685        0.49
+layer 32 ap: 0.4901864164000126
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.88it/s]
+                 all        5000       36781       0.709       0.641       0.686        0.49
+layer 33 ap: 0.4903699676529511
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.88it/s]
+                 all        5000       36781       0.713       0.637       0.686        0.49
+layer 34 ap: 0.4901783964185463
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.90it/s]
+                 all        5000       36781       0.719       0.637       0.686        0.49
+layer 35 ap: 0.49011484096828734
+ignore model.36 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.91it/s]
+                 all        5000       36781       0.716       0.637       0.686       0.491
+layer 37 ap: 0.4906198900078042
+ignore model.38 because it is <class 'models.common.MP'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.81it/s]
+                 all        5000       36781       0.717       0.636       0.686        0.49
+layer 39 ap: 0.49009845371703065
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.89it/s]
+                 all        5000       36781       0.718       0.637       0.686        0.49
+layer 40 ap: 0.4902713400155235
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.86it/s]
+                 all        5000       36781       0.717       0.637       0.686        0.49
+layer 41 ap: 0.4900763065734027
+ignore model.42 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.71it/s]
+                 all        5000       36781       0.719       0.635       0.686        0.49
+layer 43 ap: 0.4901362586771635
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.78it/s]
+                 all        5000       36781       0.715       0.637       0.686        0.49
+layer 44 ap: 0.49018259407913706
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.78it/s]
+                 all        5000       36781        0.72       0.634       0.686        0.49
+layer 45 ap: 0.4901207102191666
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.80it/s]
+                 all        5000       36781        0.72       0.634       0.686        0.49
+layer 46 ap: 0.4901533630313983
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.90it/s]
+                 all        5000       36781       0.714       0.638       0.685        0.49
+layer 47 ap: 0.49011359311494473
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.89it/s]
+                 all        5000       36781       0.727       0.628       0.686        0.49
+layer 48 ap: 0.4904377612504131
+ignore model.49 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.84it/s]
+                 all        5000       36781       0.721       0.633       0.685        0.49
+layer 50 ap: 0.49034814762607926
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:02<00:00, 10.18it/s]
+                 all        5000       36781       0.712       0.638       0.685        0.49
+layer 51 ap: 0.4901199145449679
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.82it/s]
+                 all        5000       36781       0.719       0.635       0.686        0.49
+layer 52 ap: 0.4903365833707147
+ignore model.53 because it is <class 'torch.nn.modules.upsampling.Upsample'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.80it/s]
+                 all        5000       36781       0.719       0.635       0.686        0.49
+layer 54 ap: 0.4902380135545362
+ignore model.55 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.76it/s]
+                 all        5000       36781       0.712        0.64       0.686        0.49
+layer 56 ap: 0.4900744021818599
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.74it/s]
+                 all        5000       36781       0.717       0.637       0.686       0.491
+layer 57 ap: 0.4906182738249051
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.74it/s]
+                 all        5000       36781       0.718       0.636       0.686        0.49
+layer 58 ap: 0.4903104160843054
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.78it/s]
+                 all        5000       36781       0.718       0.634       0.686        0.49
+layer 59 ap: 0.49037113450261316
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.83it/s]
+                 all        5000       36781       0.715       0.637       0.686        0.49
+layer 60 ap: 0.49014830818219457
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.86it/s]
+                 all        5000       36781        0.72       0.634       0.686        0.49
+layer 61 ap: 0.48997390751807146
+ignore model.62 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.86it/s]
+                 all        5000       36781       0.718       0.635       0.686        0.49
+layer 63 ap: 0.4903853403878715
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.83it/s]
+                 all        5000       36781       0.716       0.638       0.686        0.49
+layer 64 ap: 0.4901637485424784
+ignore model.65 because it is <class 'torch.nn.modules.upsampling.Upsample'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.88it/s]
+                 all        5000       36781       0.716       0.638       0.686       0.491
+layer 66 ap: 0.49052049838744727
+ignore model.67 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.78it/s]
+                 all        5000       36781       0.708       0.642       0.686        0.49
+layer 68 ap: 0.4901546903259745
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.82it/s]
+                 all        5000       36781       0.716       0.637       0.686       0.491
+layer 69 ap: 0.4906289669501069
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.80it/s]
+                 all        5000       36781       0.717       0.637       0.686        0.49
+layer 70 ap: 0.49012460509375666
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.79it/s]
+                 all        5000       36781       0.719       0.635       0.686        0.49
+layer 71 ap: 0.4901974679745337
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.83it/s]
+                 all        5000       36781       0.709       0.641       0.686        0.49
+layer 72 ap: 0.49031902934395
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.84it/s]
+                 all        5000       36781       0.715       0.636       0.686        0.49
+layer 73 ap: 0.49024799695103083
+ignore model.74 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.91it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 75 ap: 0.4904630747524129
+ignore model.76 because it is <class 'models.common.MP'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.77it/s]
+                 all        5000       36781       0.709       0.641       0.685        0.49
+layer 77 ap: 0.4900988719021965
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.80it/s]
+                 all        5000       36781       0.718       0.636       0.686        0.49
+layer 78 ap: 0.49016868548034953
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:05<00:00,  9.92it/s]
+                 all        5000       36781       0.716       0.637       0.686        0.49
+layer 79 ap: 0.49032921508250754
+ignore model.80 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.89it/s]
+                 all        5000       36781       0.714       0.639       0.686        0.49
+layer 81 ap: 0.48999470366750897
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.82it/s]
+                 all        5000       36781       0.714       0.639       0.686        0.49
+layer 82 ap: 0.490301987392084
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.81it/s]
+                 all        5000       36781       0.716       0.637       0.686        0.49
+layer 83 ap: 0.4899510861603602
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.87it/s]
+                 all        5000       36781       0.717       0.637       0.686        0.49
+layer 84 ap: 0.4903587996086429
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.77it/s]
+                 all        5000       36781       0.714       0.639       0.686        0.49
+layer 85 ap: 0.49036212394529627
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.82it/s]
+                 all        5000       36781       0.714       0.639       0.686        0.49
+layer 86 ap: 0.49006460017949244
+ignore model.87 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.91it/s]
+                 all        5000       36781       0.717       0.637       0.686        0.49
+layer 88 ap: 0.49005073218555706
+ignore model.89 because it is <class 'models.common.MP'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.79it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 90 ap: 0.4903648208441706
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.85it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 91 ap: 0.4903189403067317
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.87it/s]
+                 all        5000       36781       0.718       0.635       0.686        0.49
+layer 92 ap: 0.49019075238249865
+ignore model.93 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.85it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 94 ap: 0.49018758789142713
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.84it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 95 ap: 0.49017604778637125
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.84it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 96 ap: 0.4901376460284458
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.77it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 97 ap: 0.4900209763047222
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.73it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 98 ap: 0.49030647481571377
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:08<00:00,  9.75it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 99 ap: 0.4901315255907656
+ignore model.100 because it is <class 'models.common.Concat'>
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.81it/s]
+                 all        5000       36781       0.713       0.639       0.686        0.49
+layer 101 ap: 0.4901414506260073
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.79it/s]
+                 all        5000       36781       0.716       0.638       0.686        0.49
+layer 102 ap: 0.4902671053197135
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.79it/s]
+                 all        5000       36781       0.717       0.636       0.686        0.49
+layer 103 ap: 0.4903080684954403
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:07<00:00,  9.77it/s]
+                 all        5000       36781       0.715       0.638       0.686        0.49
+layer 104 ap: 0.4900557560675063
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|█████████████████| 1250/1250 [02:06<00:00,  9.90it/s]
+                 all        5000       36781       0.734       0.622       0.686       0.491
+layer 105 ap: 0.4913296018165473
+Sensitive Summary:
+Top0: Using fp16 model.105, ap = 0.49133
+Top1: Using fp16 model.11, ap = 0.49079
+Top2: Using fp16 model.28, ap = 0.49070
+Top3: Using fp16 model.69, ap = 0.49063
+Top4: Using fp16 model.37, ap = 0.49062
+Top5: Using fp16 model.57, ap = 0.49062
+Top6: Using fp16 model.21, ap = 0.49060
+Top7: Using fp16 model.2, ap = 0.49054
+Top8: Using fp16 model.66, ap = 0.49052
+Top9: Using fp16 model.7, ap = 0.49047
+Begining PTQ.....
+Prepare Model ....
+Fusing layers...
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+IDetect.fuse
+Quantization : model.105.m.0 has ignored.
+Quantization : model.105.m.1 has ignored.
+Quantization : model.105.m.2 has ignored.
+Prepare Dataset ....
+Scanning 'dataset/coco2017/val2017.cache' images and labels... 5000 found, 0 missing, 48 empty, 0 corrupted: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+Scanning 'dataset/coco2017/train2017.cache' images and labels... 118287 found, 0 missing, 1021 empty, 4 corrupted: 100%|█| 118287/118287 [00:00<?, ?it/s
+Begining Calibration ....
+PTQ Quantization Has Finished....
